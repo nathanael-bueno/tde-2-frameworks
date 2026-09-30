@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header
+      class="genos w-full max-h-[80px] bg-white flex flex-row justify-between items-center py-4 px-14"
+    >
+      <div>
+        <a class="flex flex-row gap-10" href="#">
+          <img src="assets/logo.svg" alt="" />
+          <p class="text-4xl tracking-[0.7rem]">VINCI</p>
+        </a>
+      </div>
+      <div>
+        <ul class="flex flex-row gap-20">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">SOBRE</a></li>
+          <li><a href="#">VEÍCULOS</a></li>
+          <li><a href="#">SERVIÇOS</a></li>
+          <li><a href="#">TEST DRIVE</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="h-full flex flex-col gap-20">
+      <div
+        id="hero-carro"
+        class="flex flex-col items-center text-center bg-white px-10 gap-4"
+      >
+        <img
+          class="w-[50%]"
+          src="assets/carro-hero.png"
+          alt="Carro VINCI Model V2"
+        />
+        <h2 class="text-5xl genos">VINCI MODEL V2</h2>
+        <p class="w-[42%] text-gray-500">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
+          expedita maxime blanditiis adipisci unde aperiam aspernatur, illo
+          suscipit repellat numquam illum amet impedit fugit praesentium vitae.
+        </p>
+        <div class="w-auto flex flex-row gap-8 font-semibold text-xl genos">
+          <a class="py-3 px-24 bg-red-500 rounded-sm text-white" href="#"
+            >MODELOS</a
+          >
+          <a class="py-3 px-24 border border-black rounded-sm" href="#"
+            >TEST DRIVE</a
+          >
+        </div>
+      </div>
+
+      <div
+        class="w-full text-center text-xl flex flex-col items-center bg-white gap-4 genos"
+      >
+        <p class="text-gray-500">TECNOLOGIA ALIADA AO FUTURO</p>
+        <div class="flex flex-row text-start gap-20">
+          <div class="flex flex-col">
+            <p class="text-5xl">520 KM</p>
+            <p>COM 1 CARGA</p>
+          </div>
+          <div class="flex flex-col">
+            <p class="text-5xl">2.800 RPM</p>
+            <p>DE TORQUE</p>
+          </div>
+          <div class="flex flex-col">
+            <p class="text-5xl">10 ANOS</p>
+            <p>GARANTIA</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full px-10">
+        <img
+          class="w-full h-150 object-cover rounded-2xl"
+          src="assets/carro-estrada.png"
+          alt="Carro branco em uma estrada"
+        />
+      </div>
+
+      <div class="w-full max-h-150 flex flex-row genos">
+        <div class="w-[25%] flex flex-col gap-6">
+          <div class="flex flex-col gap-2 px-4">
+            <p class="text-xl">RECARGA RÁPIDA</p>
+            <p class="text-gray-500">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+              voluptatum quibusdam nesciunt a blanditiis illum modi consectetur
+              expedita vel.
+            </p>
+          </div>
+          <img
+            class="w-full h-full object-cover"
+            src="assets/feat-recarga.png"
+            alt="Mulher com carro carreegando"
+          />
+        </div>
+
+        <div class="w-[25%] flex flex-col gap-6">
+          <div class="flex flex-col gap-2 px-4">
+            <p class="text-xl">RECARGA RÁPIDA</p>
+            <p class="text-gray-500">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+              voluptatum quibusdam nesciunt a blanditiis illum modi consectetur
+              expedita vel.
+            </p>
+          </div>
+          <img
+            class="w-full h-full object-cover"
+            src="assets/feat-painel.png"
+            alt="mapinha na tela"
+          />
+        </div>
+
+        <div class="w-[25%] flex flex-col gap-6">
+          <div class="flex flex-col gap-2 px-4">
+            <p class="text-xl">RECARGA RÁPIDA</p>
+            <p class="text-gray-500">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+              voluptatum quibusdam nesciunt a blanditiis illum modi consectetur
+              expedita vel.
+            </p>
+          </div>
+          <img
+            class="w-full h-full object-cover"
+            src="assets/feat-pontos.png"
+            alt="carregando carro"
+          />
+        </div>
+
+        <div class="w-[25%] flex flex-col gap-6">
+          <div class="flex flex-col gap-2 px-4">
+            <p class="text-xl">RECARGA RÁPIDA</p>
+            <p class="text-gray-500">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+              voluptatum quibusdam nesciunt a blanditiis illum modi consectetur
+              expedita vel.
+            </p>
+          </div>
+          <img
+            class="w-full h-full object-cover"
+            src="assets/feat-design.png"
+            alt="camera de dentro do carro"
+          />
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center genos text-gray-500">
+        <div class="w-full flex flex-row justify-between px-10">
+          <div class="max-w-[30%] flex flex-col gap-4">
+            <h3 class="text-5xl text-black">VINCI MODEL V2</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi,
+              cum. Eligendi ut repudiandae architecto maxime, doloribus
+              laudantium nostrum.
+            </p>
+          </div>
+          <div class="flex flex-row gap-8">
+            <!-- Não consegui colocar as letras dentro dos pontos :( -->
+            <div class="flex flex-col gap-2">
+              <p>RETROVISORES INTELIGENTES</p>
+              <p>RODAS DE LIGA LEVE</p>
+              <p>RECONHECIMENTO DE DIGITAL</p>
+              <p>SENSOR DE PROXIMIDADE</p>
+            </div>
+            <div class="flex flex-col gap-2">
+              <p>ANTENAS 5G</p>
+              <p>DESIGN SOFISTICADO</p>
+              <p>ABERTURA AUTOMATICA</p>
+              <p>CAMERA DE ESTACIONAMENTO</p>
+            </div>
+          </div>
+        </div>
+        <img
+          class="w-[50%]"
+          src="assets/carro-detalhes.png"
+          alt="carro lateralizdo"
+        />
+      </div>
+
+      <div
+        class="w-full flex flex-col items-center px-10 gap-4 uppercase genos"
+      >
+        <h3 class="text-5xl">FAQ</h3>
+        <p class="text-gray-500">PERGUNTAS FREQUENTES</p>
+        <div class="max-w-70% flex flex-col gap-4">
+          <div class="flex flex-row justify-between items-center gap-4">
+            <p class="text-2xl">
+              Qual é a autonomia real da bateria em diferentes condições de
+              condução?
+            </p>
+            <svg
+              class="w-16 lucide lucide-chevron-down preview-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+            >
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+          </div>
+
+          <div class="flex flex-row justify-between items-center gap-4">
+            <p class="text-2xl">
+              Quanto tempo o carro leva para carregar em tomadas residenciais e
+              em carregadores rápidos?
+            </p>
+            <svg
+              class="w-16 lucide lucide-chevron-down preview-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+            >
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+          </div>
+
+          <div class="flex flex-row justify-between items-center gap-4">
+            <p class="text-2xl">
+              Como funciona a infraestrutura de recarga para viagens de longa
+              distância?
+            </p>
+            <svg
+              class="w-16 lucide lucide-chevron-down preview-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+            >
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+          </div>
+
+          <div class="flex flex-row justify-between items-center gap-4">
+            <p class="text-2xl">
+              Qual é o tempo de garantia da bateria e qual a sua vida útil
+              estimada?
+            </p>
+            <svg
+              class="w-16 lucide lucide-chevron-down preview-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+            >
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+          </div>
+
+          <div class="flex flex-row justify-between items-center gap-4">
+            <p class="text-2xl">
+              Quais são as principais economias em manutenção e impostos
+              comparado a um carro a combustão?
+            </p>
+            <svg
+              class="w-16 lucide lucide-chevron-down preview-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+            >
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      class="bg-white flex flex-row justify-between text-xl px-10 py-20 gap-10 genos"
+    >
+      <div class="flex flex-col justify-between">
+        <a class="flex flex-row gap-10" href="#">
+          <img src="assets/logo.svg" alt="" />
+          <p class="text-4xl tracking-[0.7rem]">VINCI</p>
+        </a>
+        <p class="text-gray-500">
+          ©Copyright 2026.<br />Todos os Direitos Reservados.
+        </p>
+      </div>
+      <div class="flex flex-row gap-20">
+        <div class="flex flex-col justify-start gap-6">
+          <p>SOBRE</p>
+          <div class="flex flex-col gap-2 text-gray-500 justify-start">
+            <a href="#">A Marca</a>
+            <a href="#">História</a>
+            <a href="#">Qualidade</a>
+            <a href="#">Onde Estamos</a>
+            <a href="#">Investidores</a>
+          </div>
+        </div>
+        <div class="flex flex-col justify-start gap-6">
+          <p>CONTATO</p>
+          <div class="flex flex-col gap-2 text-gray-500 justify-start">
+            <a href="#">Fale Conosco</a>
+            <a href="#">Atendimento</a>
+            <a href="#">SAC</a>
+          </div>
+        </div>
+        <div class="flex flex-col justify-start gap-6">
+          <p>SAC</p>
+          <div class="flex flex-col gap-2 text-gray-500 justify-start">
+            <a href="#">Canais Oficiais</a>
+            <a href="#">Redes Sociais</a>
+            <a href="#">Suporte</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

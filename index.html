@@ -9,31 +9,30 @@
     <title>Document</title>
   </head>
   <body class="bg-black">
-    <header>
-      <div
-        class="genos w-full max-h-[80px] bg-white flex flex-row justify-between items-center py-4 px-14"
-      >
-        <div>
-          <a class="flex flex-row gap-10" href="#">
-            <img src="assets/logo.svg" alt="" />
-            <p class="text-4xl tracking-[0.7rem]">VINCI</p>
-          </a>
-        </div>
-        <div>
-          <ul class="flex flex-row gap-20">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">SOBRE</a></li>
-            <li><a href="#">VEÍCULOS</a></li>
-            <li><a href="#">SERVIÇOS</a></li>
-            <li><a href="#">TEST DRIVE</a></li>
-          </ul>
-        </div>
+    <header
+      class="genos w-full max-h-[80px] bg-white flex flex-row justify-between items-center py-4 px-14"
+    >
+      <div>
+        <a class="flex flex-row gap-10" href="#">
+          <img src="assets/logo.svg" alt="" />
+          <p class="text-4xl tracking-[0.7rem]">VINCI</p>
+        </a>
+      </div>
+      <div>
+        <ul class="flex flex-row gap-20">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">SOBRE</a></li>
+          <li><a href="#">VEÍCULOS</a></li>
+          <li><a href="#">SERVIÇOS</a></li>
+          <li><a href="#">TEST DRIVE</a></li>
+        </ul>
       </div>
     </header>
-    <main class="h-full object-cover">
+
+    <main class="h-full">
       <div
         id="hero"
-        class="w-auto h-215 bg-[url(./assets/hero.png)] bg-cover bg-bottom bg-no-repeat flex items-end px-10 py-20"
+        class="w-auto h-170 bg-[url(./assets/hero.png)] bg-cover bg-bottom bg-no-repeat flex items-end px-10 py-20"
       >
         <div class="flex flex-col text-white gap-14">
           <p class="text-2xl">
@@ -54,7 +53,7 @@
       </div>
 
       <div
-        class="w-full flex flex-row justify-around bg-white gap-20 px-10 py-14 genos"
+        class="w-full flex flex-row justify-around bg-white gap-20 px-10 py-20 genos"
       >
         <div class="flex flex-col justify-between">
           <div class="flex flex-row justify-between text-xl gap-10">
@@ -116,10 +115,11 @@
       </div>
 
       <div
-        class="w-full h-200 bg-[url(./assets/banner-estrada.png)] bg-cover bg-center"
+        class="w-full h-150 bg-[url(./assets/banner-estrada.png)] bg-cover bg-center"
       ></div>
-      <div class="flex flex-col bg-white px-4 py-10">
-        <div>
+
+      <div class="flex flex-col bg-white text-6xl px-10 py-10 gap-2 genos">
+        <a class="flex flex-row justify-between" href="#">
           <p>AGENDE UM TEST DRIVE</p>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -131,10 +131,80 @@
           >
             <path d="m9 18 6-6-6-6" />
           </svg>
-        </div>
-        <div></div>
-        <div></div>
+        </a>
+        <a class="flex flex-row justify-between" href="#">
+          <p>VEJA OFERTAS</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="3"
+            class="w-10 lucide lucide-chevron-right preview-icon"
+          >
+            <path d="m9 18 6-6-6-6" />
+          </svg>
+        </a>
+        <a class="flex flex-row justify-between" href="#">
+          <p>ENCONTRE UMA LOJA</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="3"
+            class="w-10 lucide lucide-chevron-right preview-icon"
+          >
+            <path d="m9 18 6-6-6-6" />
+          </svg>
+        </a>
       </div>
+
+      <div
+        class="w-full h-150 bg-[url(./assets/banner-final.png)] bg-cover bg-position-[center_70%]"
+      ></div>
     </main>
+
+    <footer
+      class="bg-white flex flex-row justify-between text-xl px-10 py-20 gap-10 genos"
+    >
+      <div class="flex flex-col justify-between">
+        <a class="flex flex-row gap-10" href="#">
+          <img src="assets/logo.svg" alt="" />
+          <p class="text-4xl tracking-[0.7rem]">VINCI</p>
+        </a>
+        <p class="text-gray-500">
+          ©Copyright 2026.<br />Todos os Direitos Reservados.
+        </p>
+      </div>
+      <div class="flex flex-row gap-20">
+        <div class="flex flex-col justify-start gap-6">
+          <p>SOBRE</p>
+          <div class="flex flex-col gap-2 text-gray-500 justify-start">
+            <a href="#">A Marca</a>
+            <a href="#">História</a>
+            <a href="#">Qualidade</a>
+            <a href="#">Onde Estamos</a>
+            <a href="#">Investidores</a>
+          </div>
+        </div>
+        <div class="flex flex-col justify-start gap-6">
+          <p>CONTATO</p>
+          <div class="flex flex-col gap-2 text-gray-500 justify-start">
+            <a href="#">Fale Conosco</a>
+            <a href="#">Atendimento</a>
+            <a href="#">SAC</a>
+          </div>
+        </div>
+        <div class="flex flex-col justify-start gap-6">
+          <p>SAC</p>
+          <div class="flex flex-col gap-2 text-gray-500 justify-start">
+            <a href="#">Canais Oficiais</a>
+            <a href="#">Redes Sociais</a>
+            <a href="#">Suporte</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
