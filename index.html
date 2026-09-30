@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
-  <body class="bg-black">
+  <body id="app" class="bg-black">
     <header
       class="genos w-full max-h-[80px] bg-white flex flex-row justify-between items-center py-4 px-14"
     >
@@ -22,7 +22,14 @@
         <ul class="flex flex-row gap-20">
           <li><a href="#">HOME</a></li>
           <li><a href="#">SOBRE</a></li>
-          <li><a href="#">VEÍCULOS</a></li>
+          <li>
+            <a
+              href="#"
+              @click.prevent="mostrarVeiculos = !mostrarVeiculos"
+              :class="{ 'underline underline-offset-8': mostrarVeiculos }"
+              >VEÍCULOS</a
+            >
+          </li>
           <li><a href="#">SERVIÇOS</a></li>
           <li><a href="#">TEST DRIVE</a></li>
         </ul>
@@ -206,5 +213,48 @@
         </div>
       </div>
     </footer>
+
+    <div
+      v-if="mostrarVeiculos"
+      @click.self="mostrarVeiculos = false"
+      class="fixed inset-0 top-[80px] z-50"
+    >
+      <div
+        class="genos bg-white w-full shadow-lg px-14 py-10 flex flex-row gap-16"
+      >
+        <div class="grid grid-cols-3 gap-x-16 gap-y-8 flex-1">
+          <div
+            v-for="veiculo in veiculos"
+            :key="veiculo.nome"
+            class="flex flex-col items-center gap-2"
+          >
+            <img
+              :src="veiculo.imagem"
+              :alt="veiculo.nome"
+              class="w-full h-28 object-contain"
+            />
+            <p class="text-sm tracking-[0.15rem]">{{ veiculo.nome }}</p>
+            <div class="flex flex-row gap-4 text-xs text-gray-500">
+              <a href="#" class="hover:underline">Ver mais</a>
+              <a href="#" class="hover:underline">Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col gap-4 min-w-40 border-l border-gray-200 pl-10"
+        >
+          <p class="text-xs text-gray-400 tracking-[0.25rem]">NAVEGUE</p>
+          <a href="#" class="text-sm">OFERTAS</a>
+          <a href="#" class="text-sm">TEST DRIVE</a>
+          <a href="#" class="text-sm">LOJAS</a>
+          <a href="#" class="text-sm">SERVIÇOS</a>
+          <a href="#" class="text-sm">SAC</a>
+          <a href="#" class="text-sm">PRIVACIDADE</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
   </body>
 </html>
